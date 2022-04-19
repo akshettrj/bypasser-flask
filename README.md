@@ -36,7 +36,7 @@ Flask server that integrates various bypassing scripts with API support
 | 6.    | Rocklinks   | `rocklinks`   |
 | 7.    | Shorte      | `shorte`      |
 
---
+---
 
 * Thanks to [Yukki](https://github.com/xcscxr) for bypassing scripts
 * Thanks to [Zek](https://github.com/ZekXtreme) for motivation
