@@ -2,7 +2,7 @@ import requests
 from base64 import b64decode
 
 
-def sirigan(url):
+def sirigan_bypass(url):
     client = requests.Session()
     res = client.get(url)
     url = res.url.split('=', maxsplit=1)[-1]

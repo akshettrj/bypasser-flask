@@ -7,7 +7,7 @@ from .bypassers.linkvertise import linkvertise_bypass
 from .bypassers.ouo import ouo_bypass
 from .bypassers.rocklinks import rocklinks_bypass
 from .bypassers.shorte_st import sh_st_bypass
-from .bypassers.sirigan import sirigan
+from .bypassers.sirigan import sirigan_bypass
 
 BYPASSERS = {
     "adfly": adfly_bypass,
@@ -17,7 +17,7 @@ BYPASSERS = {
     "ouo": ouo_bypass,
     "rocklinks": rocklinks_bypass,
     "shorte": sh_st_bypass,
-    "sirigan": sirigan,
+    "sirigan": sirigan_bypass,
 }
 
 app = Flask(__name__,
