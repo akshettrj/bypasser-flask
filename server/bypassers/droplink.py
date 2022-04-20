@@ -16,7 +16,7 @@ def droplink_bypass(url):
 
     bs4 = BeautifulSoup(res.content, 'lxml')
     inputs = bs4.find_all('input')
-    data = { input.get('name'): input.get('value') for input in inputs }
+    data = {input.get('name'): input.get('value') for input in inputs}
 
     h = {
         'content-type': 'application/x-www-form-urlencoded',
