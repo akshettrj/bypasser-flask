@@ -37,6 +37,27 @@ Flask server that integrates various bypassing scripts with API support
 | 7.    | Shorte      | `shorte`      |
 | 8.    | Sirigan     | `sirigan`      |
 
+## Sample Requests
+
+1. cURL
+```sh
+curl -H "Content-Type: application/json" -X POST -d '{"type": "adfly", "url": ""}' http://localhost:5000/api
+```
+2. Python
+```py
+import requests
+
+resp = requests.post("https://localhost:500/api", json={
+   "type": "adfly",
+   "url": "url"
+})
+j_resp = resp.json()
+if j_resp["ok"] is True:
+   print(j_resp["url"])
+else:
+   print(j_resp["message"])
+```
+
 ---
 
 * Thanks to [Yukki](https://github.com/xcscxr) for bypassing scripts
