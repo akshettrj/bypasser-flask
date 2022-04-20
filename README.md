@@ -35,6 +35,7 @@ Flask server that integrates various bypassing scripts with API support
 | 5.    | Ouo         | `ouo`         |
 | 6.    | Rocklinks   | `rocklinks`   |
 | 7.    | Shorte      | `shorte`      |
+| 8.    | Sirigan     | `sirigan`      |
 
 ---
 
