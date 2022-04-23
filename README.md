@@ -62,3 +62,4 @@ else:
 
 * Thanks to [Yukki](https://github.com/xcscxr) for bypassing scripts
 * Thanks to [Zek](https://github.com/ZekXtreme) for motivation
+* Thanks to [Sanjit](https://github.com/sanjit-sinha) for rocklink bypass
