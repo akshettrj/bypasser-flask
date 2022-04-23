@@ -1,10 +1,10 @@
 import time
-import requests
+import cloudscraper
 from bs4 import BeautifulSoup
 
 def rocklinks_bypass(url):
-    client = requests.Session()
-    DOMAIN = "https://link.techyone.co"
+    client = cloudscraper.create_scraper(allow_brotli=False)
+    DOMAIN = "https://pastebin.techymedies.com"
     url = url[:-1] if url[-1] == '/' else url
 
     code = url.split("/")[-1]
