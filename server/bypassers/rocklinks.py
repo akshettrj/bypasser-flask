@@ -4,11 +4,11 @@ from bs4 import BeautifulSoup
 
 def rocklinks_bypass(url):
     client = cloudscraper.create_scraper(allow_brotli=False)
-    DOMAIN = "https://pastebin.techymedies.com"
+    DOMAIN = "https://rocklink.in"
     url = url[:-1] if url[-1] == '/' else url
 
     code = url.split("/")[-1]
-    final_url = f"{DOMAIN}/{code}?quelle="
+    final_url = f"{DOMAIN}/{code}"
 
     resp = client.get(final_url)
 
@@ -18,6 +18,6 @@ def rocklinks_bypass(url):
 
     h = { "x-requested-with": "XMLHttpRequest" }
 
-    time.sleep(6)
+    time.sleep(5)
     r = client.post(f"{DOMAIN}/links/go", data=data, headers=h)
     return r.json()['url']
