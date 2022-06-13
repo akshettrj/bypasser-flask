@@ -8,6 +8,7 @@ from .bypassers.ouo import ouo_bypass
 from .bypassers.rocklinks import rocklinks_bypass
 from .bypassers.shorte_st import sh_st_bypass
 from .bypassers.sirigan import sirigan_bypass
+from .bypassers.rewayatcafe import rewayatcafe_bypass
 
 BYPASSERS = {
     "adfly": adfly_bypass,
@@ -18,9 +19,7 @@ BYPASSERS = {
     "rocklinks": rocklinks_bypass,
     "shorte": sh_st_bypass,
     "sirigan": sirigan_bypass,
+    "rewayatcafe": rewayatcafe_bypass,
 }
 
-app = Flask(__name__,
-            static_url_path="/static", static_folder="assets",
-            template_folder="templates",
-            )
+app = Flask(__name__)
